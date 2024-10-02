@@ -69,6 +69,11 @@ python manage.py createsuperuser
 ```
 
 ### Step 6: Start Redis
+1. Download and unzip Redis from [this link](https://github.com/MicrosoftArchive/redis/releases).
+
+2. Navigate to the Redis directory and run the following command to start the Redis server:
+   ```bash
+   .\redis-server.exe
 
 ### Step 7: Run Server
 ```bash
