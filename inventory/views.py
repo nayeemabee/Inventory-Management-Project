@@ -61,7 +61,7 @@ def get_item_list(request):
         # Checking if the queryset is empty
         if not items.exists():  
             logger.warning('No items found when fetching item list.')  
-            return Response({"error": "No items found"}, status=status.HTTP_404_NOT_FOUND)
+            return Response({"error": "No items found"}, status=status.HTTP_200_OK)
 
         serializer = ItemSerializer(items, many=True)
         cache.set(cache_key, serializer.data, timeout=60 * 15)  

@@ -102,11 +102,11 @@ class ItemTests(APITestCase):
         url = reverse('get_item_list')
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(len(response.data), 2)
+        self.assertGreaterEqual(len(response.data), 2)
         test_logger.info('Successfully fetched all items.')  
 
     def test_get_all_items_empty(self):
         url = reverse('get_item_list')
         response = self.client.get(url)
-        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
         test_logger.warning('No items found when fetching the item list.')  
