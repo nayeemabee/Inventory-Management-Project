@@ -42,8 +42,8 @@ Ensure you have the following installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone 
-cd inventory-management-api
+git clone https://github.com/nayeemabee/Inventory-Management-Project.git
+cd Inventory-Management-Project
 ```
 
 ### Step 2: Activate a Virtual Environment
