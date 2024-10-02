@@ -23,7 +23,7 @@ A simple backend API for managing inventory using Django Rest Framework (DRF), P
 
 ## Technologies
 
-- Django 4.x
+- Django 5.1.1
 - Django Rest Framework
 - PostgreSQL
 - Redis
@@ -162,7 +162,7 @@ Note:
 Replace `<YOUR_ACCESS_TOKEN>` with the appropriate JWT token you received after logging in.
 
 ## Logging
-The application uses Python’s `logging` module to capture errors and events. Log files are saved in the `logs/` directory.
+The application uses Python’s `logging` module to capture errors and events. Log files are saved in the project directory.
 
 ### Log Levels:
 
